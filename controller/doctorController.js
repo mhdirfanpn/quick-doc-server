@@ -185,8 +185,8 @@ export const activeSession = async (req, res) => {
   // const currentISODate = new Date();
   // currentISODate.setHours(currentISODate.getHours()-2);
   const currentISODate = new Date();
-  currentISODate.setHours(currentISODate.getHours());
-  currentISODate.setMinutes(currentISODate.getMinutes());
+  currentISODate.setHours(currentISODate.getHours()+5);
+ // currentISODate.setMinutes(currentISODate.getMinutes());
   try {
     const session = await Session.findOne({
       doctorId: req.params.id,
