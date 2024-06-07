@@ -19,7 +19,7 @@ dotenv.config();
 
 const server = http.createServer(app);
 const io = new Server(server,
-  { cors: { origin: ["https://quickdoc.online", "https://www.quickdoc.online", "https://quick-doc-client.vercel.app/", "https://quickdoc.irfanpn.online", "https://quick-doc-client.pages.dev"] } }
+  { cors: { origin: ["https://quickdoc.online", "https://www.quickdoc.online", "https://quick-doc-client.vercel.app/", "https://quickdoc.irfanpn.online","https://quickdoc.mhdirfan.online"] } }
 );
 // cors: {
 //   origin: "https://www.quickdoc.online"
